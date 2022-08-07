@@ -1,0 +1,12 @@
+Best-Time-to-Buy-and-Sell-Stock:
+    it is the problem to find the max profit for your buying and selling.
+ Algorithms Explanation: consider you have an array of integer n elements
+    1- Suppose we have two integer variables( buy and maxProfit)
+    2- Let  buy variable is initiated by the first element of the array like buy = prices[0], amd maxProfit = 0;
+    3- Checking the lowest buy value by traversing the elements: if the buy is greater than the next array element, 
+          then there is new buy which equal the current traversed elemenet that achived the condition: buy > prices[i]  => buy = prices[i]
+    4- Then, Checking the Highest Profit by comparing the difference between price[i] and buy as (price[i] - buy) and max profit ,  we quaranted that buy is 
+      less than price[i] from 3.
+      - if (price[i]- buy) > maxProfit, then maxProfit = Price[i] - buy .
+      
+   
